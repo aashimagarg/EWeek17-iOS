@@ -1,0 +1,6 @@
+framework module Pods_EWeek2018UITests {
+  umbrella header "Pods-EWeek2018UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
