@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rjy-jY-Zwi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,6 +23,120 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="417" y="43"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="xzK-Qp-o5G">
+            <objects>
+                <viewController id="rjy-jY-Zwi" customClass="RegistrationViewController" customModule="EWeek2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ffe-Hj-EG3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIi-De-LdT">
+                                <rect key="frame" x="71" y="162" width="233" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Organization Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSo-SY-jye">
+                                <rect key="frame" x="71" y="318" width="233" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UTEID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T2s-Kv-Wzf">
+                                <rect key="frame" x="71" y="240" width="233" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FB-vk-jSb">
+                                <rect key="frame" x="100" y="358" width="175" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="igm-Sp-4z1" kind="show" id="y7R-am-yyL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CEF-Xb-qQ5" firstAttribute="trailing" secondItem="7FB-vk-jSb" secondAttribute="trailing" constant="100" id="4NL-JF-mwz"/>
+                            <constraint firstItem="7FB-vk-jSb" firstAttribute="top" secondItem="RSo-SY-jye" secondAttribute="bottom" constant="10" id="57W-c3-las"/>
+                            <constraint firstItem="T2s-Kv-Wzf" firstAttribute="leading" secondItem="CEF-Xb-qQ5" secondAttribute="leading" constant="71" id="9vo-5R-lb3"/>
+                            <constraint firstItem="7FB-vk-jSb" firstAttribute="leading" secondItem="CEF-Xb-qQ5" secondAttribute="leading" constant="100" id="L8e-mX-pOb"/>
+                            <constraint firstItem="CEF-Xb-qQ5" firstAttribute="bottom" secondItem="RSo-SY-jye" secondAttribute="bottom" constant="319" id="R6K-og-VSP"/>
+                            <constraint firstItem="CEF-Xb-qQ5" firstAttribute="trailing" secondItem="T2s-Kv-Wzf" secondAttribute="trailing" constant="71" id="WeT-yv-laF"/>
+                            <constraint firstItem="T2s-Kv-Wzf" firstAttribute="top" secondItem="cIi-De-LdT" secondAttribute="bottom" constant="48" id="XIT-hw-ajH"/>
+                            <constraint firstItem="CEF-Xb-qQ5" firstAttribute="trailing" secondItem="RSo-SY-jye" secondAttribute="trailing" constant="71" id="dPc-w5-hcA"/>
+                            <constraint firstItem="cIi-De-LdT" firstAttribute="leading" secondItem="CEF-Xb-qQ5" secondAttribute="leading" constant="71" id="jQR-LG-1NR"/>
+                            <constraint firstItem="RSo-SY-jye" firstAttribute="top" secondItem="T2s-Kv-Wzf" secondAttribute="bottom" constant="48" id="rtN-GQ-uyd"/>
+                            <constraint firstItem="RSo-SY-jye" firstAttribute="leading" secondItem="CEF-Xb-qQ5" secondAttribute="leading" constant="71" id="txc-Vh-Ouv"/>
+                            <constraint firstItem="CEF-Xb-qQ5" firstAttribute="trailing" secondItem="cIi-De-LdT" secondAttribute="trailing" constant="71" id="wHK-nQ-foB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CEF-Xb-qQ5"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="T2s-Kv-Wzf" id="Fop-Zb-RfB"/>
+                        <outlet property="orgTextField" destination="RSo-SY-jye" id="2AN-mp-75L"/>
+                        <outlet property="uteidTextField" destination="cIi-De-LdT" id="vRe-ZY-612"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s53-NR-EcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381.5999999999999" y="32.833583208395808"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="6yD-hy-pWI">
+            <objects>
+                <viewController id="igm-Sp-4z1" customClass="ProfileViewController" customModule="EWeek2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cn2-fM-vEO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Change Org" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-tf-zVe">
+                                <rect key="frame" x="37" y="58" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qgN-wm-iuO">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="sRK-sh-T9X"/>
+                                    <constraint firstAttribute="height" constant="300" id="vQF-nc-oqg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ue-pa-LQD">
+                                <rect key="frame" x="100" y="96" width="175" height="30"/>
+                                <state key="normal" title="Get QR Code"/>
+                                <connections>
+                                    <action selector="onQRButtonPress:" destination="igm-Sp-4z1" eventType="touchUpInside" id="a8r-My-wdb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qgN-wm-iuO" firstAttribute="centerY" secondItem="cn2-fM-vEO" secondAttribute="centerY" id="25Z-Xc-d0n"/>
+                            <constraint firstItem="Phg-tf-zVe" firstAttribute="leading" secondItem="8Do-Hy-LL7" secondAttribute="leading" constant="37" id="3g9-wT-MQb"/>
+                            <constraint firstItem="8Do-Hy-LL7" firstAttribute="trailing" secondItem="5Ue-pa-LQD" secondAttribute="trailing" constant="100" id="7oK-vP-2EA"/>
+                            <constraint firstItem="Phg-tf-zVe" firstAttribute="top" secondItem="8Do-Hy-LL7" secondAttribute="top" constant="38" id="TE1-kV-Mf7"/>
+                            <constraint firstItem="5Ue-pa-LQD" firstAttribute="top" secondItem="Phg-tf-zVe" secondAttribute="bottom" constant="8" id="gNW-kh-JUn"/>
+                            <constraint firstItem="8Do-Hy-LL7" firstAttribute="trailing" secondItem="Phg-tf-zVe" secondAttribute="trailing" constant="38" id="iW1-jv-DcA"/>
+                            <constraint firstItem="5Ue-pa-LQD" firstAttribute="leading" secondItem="8Do-Hy-LL7" secondAttribute="leading" constant="100" id="nwt-Mm-fEw"/>
+                            <constraint firstItem="qgN-wm-iuO" firstAttribute="centerX" secondItem="cn2-fM-vEO" secondAttribute="centerX" id="y0Y-1y-2tZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Do-Hy-LL7"/>
+                    </view>
+                    <connections>
+                        <outlet property="QRCodeImageView" destination="qgN-wm-iuO" id="Z3g-5x-wuk"/>
+                        <outlet property="generateQRButton" destination="5Ue-pa-LQD" id="Xmh-GN-uRb"/>
+                        <outlet property="orgTextField" destination="Phg-tf-zVe" id="2cN-IJ-86i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUN-kT-ftf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2301.5999999999999" y="35.532233883058474"/>
         </scene>
     </scenes>
 </document>

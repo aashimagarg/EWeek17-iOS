@@ -22,7 +22,7 @@ class Event {
     
     // MARK: Initialization
     
-    init(name: String, organization:String, startTime:String, endTime:String, detailPhoto: UIImage, description:String) {
+    init(name: String, organization:String, date: String, startTime:String, endTime:String, detailPhoto: UIImage, description:String) {
         // Initialize stored properties.
         self.name = name
         self.organization = organization
@@ -44,7 +44,7 @@ class Event {
             "organization": organization,
             "date": date,
             "startTime":startTime,
-            "endTime":endTime
+            "endTime":endTime,
             "descriptoin":description
         ]
     }
@@ -76,6 +76,6 @@ class Event {
     }
     
     func saveRef(_ name:String, dict:AnyObject, ref:DatabaseReference) {
-        self.candidateRef = ref.child(self.name)
+        self.eventRef = ref.child(self.name)
     }
 }

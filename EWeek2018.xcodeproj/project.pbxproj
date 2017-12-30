@@ -22,9 +22,10 @@
 		59E143661FF31F860094F95C /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E143651FF31F860094F95C /* CandidateDetailViewController.swift */; };
 		59E143691FF321380094F95C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59E143681FF321370094F95C /* GoogleService-Info.plist */; };
 		59E1436E1FF321BB0094F95C /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1436D1FF321BB0094F95C /* Candidate.swift */; };
-		59E143701FF322E10094F95C /* Configration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1436F1FF322E10094F95C /* Configration.swift */; };
+		59E143701FF322E10094F95C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1436F1FF322E10094F95C /* Configuration.swift */; };
 		59E143721FF3250A0094F95C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E143711FF3250A0094F95C /* Event.swift */; };
 		59E143741FF3277C0094F95C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E143731FF3277C0094F95C /* RegistrationViewController.swift */; };
+		59F8B1BF1FF6E3A500FAEBAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8B1BE1FF6E3A500FAEBAB /* ProfileViewController.swift */; };
 		631553C1F8DDB3A0FE83FDE5 /* Pods_EWeek2018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662594C9B0F80AC1FC60AF27 /* Pods_EWeek2018Tests.framework */; };
 		D5C75C7E4F93A8DB62711AC2 /* Pods_EWeek2018UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8332E44E62737CDD5F747D91 /* Pods_EWeek2018UITests.framework */; };
 /* End PBXBuildFile section */
@@ -70,9 +71,10 @@
 		59E143651FF31F860094F95C /* CandidateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateDetailViewController.swift; sourceTree = "<group>"; };
 		59E143681FF321370094F95C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59E1436D1FF321BB0094F95C /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
-		59E1436F1FF322E10094F95C /* Configration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configration.swift; sourceTree = "<group>"; };
+		59E1436F1FF322E10094F95C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		59E143711FF3250A0094F95C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		59E143731FF3277C0094F95C /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		59F8B1BE1FF6E3A500FAEBAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		625D74283E2E52DB220348F8 /* Pods-EWeek2018Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWeek2018Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EWeek2018Tests/Pods-EWeek2018Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		662594C9B0F80AC1FC60AF27 /* Pods_EWeek2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EWeek2018Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8332E44E62737CDD5F747D91 /* Pods_EWeek2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EWeek2018UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 				59E1435F1FF31F3D0094F95C /* AboutViewController.swift */,
 				59E143611FF31F530094F95C /* LeaderboardViewController.swift */,
 				59E143731FF3277C0094F95C /* RegistrationViewController.swift */,
+				59F8B1BE1FF6E3A500FAEBAB /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -208,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				59E1436D1FF321BB0094F95C /* Candidate.swift */,
-				59E1436F1FF322E10094F95C /* Configration.swift */,
+				59E1436F1FF322E10094F95C /* Configuration.swift */,
 				59E143711FF3250A0094F95C /* Event.swift */,
 			);
 			path = Models;
@@ -393,6 +396,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EWeek2018/Pods-EWeek2018-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -400,6 +404,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -533,10 +538,11 @@
 				59E143741FF3277C0094F95C /* RegistrationViewController.swift in Sources */,
 				59E143621FF31F530094F95C /* LeaderboardViewController.swift in Sources */,
 				59E143721FF3250A0094F95C /* Event.swift in Sources */,
+				59F8B1BF1FF6E3A500FAEBAB /* ProfileViewController.swift in Sources */,
 				59E143661FF31F860094F95C /* CandidateDetailViewController.swift in Sources */,
 				59E143641FF31F6B0094F95C /* EventDetailViewController.swift in Sources */,
 				59E1435E1FF31EFB0094F95C /* RamshornViewController.swift in Sources */,
-				59E143701FF322E10094F95C /* Configration.swift in Sources */,
+				59E143701FF322E10094F95C /* Configuration.swift in Sources */,
 				59E1436E1FF321BB0094F95C /* Candidate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,7 +711,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J29EQ9363G;
+				DEVELOPMENT_TEAM = S2GE536XDS;
 				INFOPLIST_FILE = EWeek2018/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UTSEC.EWeek2018;
@@ -721,7 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J29EQ9363G;
+				DEVELOPMENT_TEAM = S2GE536XDS;
 				INFOPLIST_FILE = EWeek2018/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UTSEC.EWeek2018;
