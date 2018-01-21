@@ -11,7 +11,7 @@ import UIKit
 import FirebaseDatabase
 
 class Configration: NSObject {
-    var configrationteRef:DatabaseReference!
+    var configrationRef:DatabaseReference!
     var name:String=""
     var year:String=""
     var navColor:String=""
@@ -47,6 +47,6 @@ class Configration: NSObject {
     }
     
     func saveRef(_ name:String, dict:AnyObject, ref:DatabaseReference) {
-        self.candidateRef = ref.child(self.name)
+        self.configrationRef = ref.child(self.name)
     }
 }

@@ -9,6 +9,8 @@ target 'EWeek2018' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'SwiftHEXColors'
+  pod 'MBProgressHUD'
+  pod 'TwitterKit'
 
   target 'EWeek2018Tests' do
     inherit! :search_paths
