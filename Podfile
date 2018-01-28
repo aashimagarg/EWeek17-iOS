@@ -9,6 +9,7 @@ target 'EWeek2018' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'SwiftHEXColors'
+  pod 'QRCode'
 
   target 'EWeek2018Tests' do
     inherit! :search_paths

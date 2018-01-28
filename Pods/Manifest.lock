@@ -27,11 +27,13 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - QRCode (2.0)
   - SwiftHEXColors (1.1.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - QRCode
   - SwiftHEXColors
 
 SPEC CHECKSUMS:
@@ -43,8 +45,9 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
   SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
 
-PODFILE CHECKSUM: 3b64334155f7e448b9f25f833fb04b4606a04290
+PODFILE CHECKSUM: 110a64706131a2328cfb1413266dc48756705347
 
 COCOAPODS: 1.3.1

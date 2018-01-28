@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EWeek2018/View Controllers/ProfileViewController.swift"
+            timestampString = "536286251.428928"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "ProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EWeek2018.ProfileViewController.orgs.getter : Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;"
+                  moduleName = "EWeek2018"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Nav/Documents/CompSci/EWeek18-iOS/EWeek2018/View%20Controllers/ProfileViewController.swift"
+                  timestampString = "536285642.031157"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EWeek2018.ProfileViewController.orgs.setter : Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;"
+                  moduleName = "EWeek2018"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Nav/Documents/CompSci/EWeek18-iOS/EWeek2018/View%20Controllers/ProfileViewController.swift"
+                  timestampString = "536285642.034633"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EWeek2018.ProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; EWeek2018.ProfileViewController"
+                  moduleName = "EWeek2018"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Nav/Documents/CompSci/EWeek18-iOS/EWeek2018/View%20Controllers/ProfileViewController.swift"
+                  timestampString = "536285642.038205"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EWeek2018.ProfileViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;EWeek2018.ProfileViewController&gt;"
+                  moduleName = "EWeek2018"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Nav/Documents/CompSci/EWeek18-iOS/EWeek2018/View%20Controllers/ProfileViewController.swift"
+                  timestampString = "536285642.041769"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
