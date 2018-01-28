@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1CC0ED51CFAD0260B9CEA7C8 /* Pods_EWeek2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92797E0B5D7695215B3A5534 /* Pods_EWeek2018.framework */; };
+		598F6128201E74550040CABB /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598F6127201E74550040CABB /* EventCell.xib */; };
+		598F612A201E745A0040CABB /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598F6129201E745A0040CABB /* DateCell.xib */; };
+		598F612D201E74AD0040CABB /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598F612C201E74AD0040CABB /* EventCell.swift */; };
+		598F612F201E74BA0040CABB /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598F612E201E74BA0040CABB /* DateCell.swift */; };
 		59E1432E1FF31CE70094F95C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1432D1FF31CE70094F95C /* AppDelegate.swift */; };
 		59E143301FF31CE70094F95C /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1432F1FF31CE70094F95C /* ScheduleViewController.swift */; };
 		59E143331FF31CE70094F95C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E143311FF31CE70094F95C /* Main.storyboard */; };
@@ -51,6 +55,10 @@
 		31981DE360119FF4B944C893 /* Pods-EWeek2018UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWeek2018UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EWeek2018UITests/Pods-EWeek2018UITests.release.xcconfig"; sourceTree = "<group>"; };
 		3A5B8124E3000B790590C1AB /* Pods-EWeek2018UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWeek2018UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EWeek2018UITests/Pods-EWeek2018UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4BE926A1B7F5AB33D31B83B7 /* Pods-EWeek2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWeek2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EWeek2018/Pods-EWeek2018.debug.xcconfig"; sourceTree = "<group>"; };
+		598F6127201E74550040CABB /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		598F6129201E745A0040CABB /* DateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
+		598F612C201E74AD0040CABB /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		598F612E201E74BA0040CABB /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		59E1432A1FF31CE70094F95C /* EWeek2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EWeek2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E1432D1FF31CE70094F95C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E1432F1FF31CE70094F95C /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +129,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		598F612B201E74970040CABB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				598F612C201E74AD0040CABB /* EventCell.swift */,
+				598F612E201E74BA0040CABB /* DateCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		59E143211FF31CE60094F95C = {
 			isa = PBXGroup;
 			children = (
@@ -146,11 +163,14 @@
 		59E1432C1FF31CE70094F95C /* EWeek2018 */ = {
 			isa = PBXGroup;
 			children = (
+				598F612B201E74970040CABB /* Views */,
 				59E1436C1FF321910094F95C /* Models */,
 				59E143681FF321370094F95C /* GoogleService-Info.plist */,
 				59E143671FF31FBE0094F95C /* View Controllers */,
 				59E1432D1FF31CE70094F95C /* AppDelegate.swift */,
 				59E143311FF31CE70094F95C /* Main.storyboard */,
+				598F6127201E74550040CABB /* EventCell.xib */,
+				598F6129201E745A0040CABB /* DateCell.xib */,
 				59E143341FF31CE70094F95C /* Assets.xcassets */,
 				59E143361FF31CE70094F95C /* LaunchScreen.storyboard */,
 				59E143391FF31CE70094F95C /* Info.plist */,
@@ -349,6 +369,8 @@
 				59E143381FF31CE70094F95C /* LaunchScreen.storyboard in Resources */,
 				59E143351FF31CE70094F95C /* Assets.xcassets in Resources */,
 				59E143331FF31CE70094F95C /* Main.storyboard in Resources */,
+				598F612A201E745A0040CABB /* DateCell.xib in Resources */,
+				598F6128201E74550040CABB /* EventCell.xib in Resources */,
 				59E143691FF321380094F95C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,7 +561,9 @@
 				59E143621FF31F530094F95C /* LeaderboardViewController.swift in Sources */,
 				59E143721FF3250A0094F95C /* Event.swift in Sources */,
 				59F8B1BF1FF6E3A500FAEBAB /* ProfileViewController.swift in Sources */,
+				598F612D201E74AD0040CABB /* EventCell.swift in Sources */,
 				59E143661FF31F860094F95C /* CandidateDetailViewController.swift in Sources */,
+				598F612F201E74BA0040CABB /* DateCell.swift in Sources */,
 				59E143641FF31F6B0094F95C /* EventDetailViewController.swift in Sources */,
 				59E1435E1FF31EFB0094F95C /* RamshornViewController.swift in Sources */,
 				59E143701FF322E10094F95C /* Configuration.swift in Sources */,

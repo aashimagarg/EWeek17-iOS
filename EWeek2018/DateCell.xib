@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datecell" id="dxA-Mk-OfW" customClass="DateCell" customModule="EWeek2018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dxA-Mk-OfW" id="Yjv-96-YUK">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbF-kL-ENE">
+                        <rect key="frame" x="24" y="12.5" width="30" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f78-Rq-M5x">
+                        <rect key="frame" x="64" y="21" width="5" height="5"/>
+                        <color key="backgroundColor" red="0.22272193470000001" green="0.1289446306" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="FL7-9g-3H7"/>
+                            <constraint firstAttribute="width" constant="5" id="yIM-64-cjj"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZq-lS-oHB">
+                        <rect key="frame" x="82" y="12.5" width="36" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="f78-Rq-M5x" secondAttribute="bottom" constant="17.5" id="7l6-sA-GQd"/>
+                    <constraint firstItem="f78-Rq-M5x" firstAttribute="top" secondItem="Yjv-96-YUK" secondAttribute="top" constant="21" id="CJ0-iV-7cB"/>
+                    <constraint firstItem="rbF-kL-ENE" firstAttribute="top" secondItem="Yjv-96-YUK" secondAttribute="topMargin" constant="1.5" id="Ej7-mh-cmT"/>
+                    <constraint firstItem="gZq-lS-oHB" firstAttribute="leading" secondItem="f78-Rq-M5x" secondAttribute="trailing" constant="13" id="VfL-OO-O0W"/>
+                    <constraint firstItem="f78-Rq-M5x" firstAttribute="leading" secondItem="rbF-kL-ENE" secondAttribute="trailing" constant="10" id="YtI-Mb-Mha"/>
+                    <constraint firstItem="gZq-lS-oHB" firstAttribute="top" secondItem="Yjv-96-YUK" secondAttribute="top" constant="13" id="b1j-iP-tCF"/>
+                    <constraint firstItem="rbF-kL-ENE" firstAttribute="leading" secondItem="Yjv-96-YUK" secondAttribute="leadingMargin" constant="8" id="elo-gy-mfH"/>
+                    <constraint firstAttribute="trailing" secondItem="gZq-lS-oHB" secondAttribute="trailing" constant="257" id="ggT-4x-O08"/>
+                    <constraint firstAttribute="bottom" secondItem="rbF-kL-ENE" secondAttribute="bottom" constant="11" id="uBW-gC-6qF"/>
+                    <constraint firstAttribute="bottom" secondItem="gZq-lS-oHB" secondAttribute="bottom" constant="10.5" id="wQX-Fe-UWf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.61485980308219179" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="dateLabel" destination="gZq-lS-oHB" id="s9i-Tz-6Tp"/>
+                <outlet property="dayLabel" destination="rbF-kL-ENE" id="jYW-CG-YOs"/>
+            </connections>
+            <point key="canvasLocation" x="149.5" y="-457"/>
+        </tableViewCell>
+    </objects>
+</document>

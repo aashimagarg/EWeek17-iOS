@@ -32,6 +32,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>QRCode.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>SwiftHEXColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
