@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Schedule View Controller-->
+        <!--Schedule-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ScheduleViewController" sceneMemberID="viewController">
@@ -20,10 +20,63 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="calendar" selectedImage="calendar" id="jmq-iq-t59"/>
+                    <navigationItem key="navigationItem" id="RAb-ox-64n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="43"/>
+            <point key="canvasLocation" x="756" y="42.728635682158924"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="9zT-dP-24M">
+            <objects>
+                <viewController id="jb6-66-rLh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WSt-iF-hmR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ug3-BG-kxb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="SEClogo" id="SVq-5O-6pU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PbX-l5-9Ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="745"/>
+        </scene>
+        <!--Ramshorn-->
+        <scene sceneID="Czg-Qr-iMn">
+            <objects>
+                <viewController id="I7h-pv-uWA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I5H-Ha-BdR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fSX-uk-wtb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ramshorn" image="ramshorn" selectedImage="ramshorn" id="szv-PI-jKm" userLabel="Ramshorn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qv-wR-3lL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="747"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NOn-ir-uOl">
+            <objects>
+                <tabBarController id="PU7-Cz-jYh" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tzf-Fc-spi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="C9s-pJ-KVh"/>
+                        <segue destination="I7h-pv-uWA" kind="relationship" relationship="viewControllers" id="YWm-9P-kwL"/>
+                        <segue destination="jb6-66-rLh" kind="relationship" relationship="viewControllers" id="TA1-cc-p0T"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rir-op-k1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="212"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="xzK-Qp-o5G">
@@ -51,18 +104,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FB-vk-jSb">
-                                <rect key="frame" x="100" y="358" width="175" height="30"/>
-                                <state key="normal" title="Login"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7FB-vk-jSb">
+                                <rect key="frame" x="100" y="401" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.56901562210000001" green="0.72743612530000001" blue="0.2187066376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <segue destination="igm-Sp-4z1" kind="show" id="y7R-am-yyL"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.12739712" green="0.25235614179999999" blue="0.38111132380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CEF-Xb-qQ5" firstAttribute="trailing" secondItem="7FB-vk-jSb" secondAttribute="trailing" constant="100" id="4NL-JF-mwz"/>
-                            <constraint firstItem="7FB-vk-jSb" firstAttribute="top" secondItem="RSo-SY-jye" secondAttribute="bottom" constant="10" id="57W-c3-las"/>
+                            <constraint firstItem="7FB-vk-jSb" firstAttribute="top" secondItem="RSo-SY-jye" secondAttribute="bottom" constant="53" id="57W-c3-las"/>
                             <constraint firstItem="T2s-Kv-Wzf" firstAttribute="leading" secondItem="CEF-Xb-qQ5" secondAttribute="leading" constant="71" id="9vo-5R-lb3"/>
                             <constraint firstItem="7FB-vk-jSb" firstAttribute="leading" secondItem="CEF-Xb-qQ5" secondAttribute="leading" constant="100" id="L8e-mX-pOb"/>
                             <constraint firstItem="CEF-Xb-qQ5" firstAttribute="bottom" secondItem="RSo-SY-jye" secondAttribute="bottom" constant="319" id="R6K-og-VSP"/>
@@ -77,6 +140,7 @@
                         <viewLayoutGuide key="safeArea" id="CEF-Xb-qQ5"/>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="7FB-vk-jSb" id="RAG-LI-VeF"/>
                         <outlet property="nameTextField" destination="T2s-Kv-Wzf" id="Fop-Zb-RfB"/>
                         <outlet property="orgTextField" destination="RSo-SY-jye" id="2AN-mp-75L"/>
                         <outlet property="uteidTextField" destination="cIi-De-LdT" id="vRe-ZY-612"/>
@@ -84,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s53-NR-EcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1381.5999999999999" y="32.833583208395808"/>
+            <point key="canvasLocation" x="1720.8" y="32.833583208395808"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="6yD-hy-pWI">
@@ -136,7 +200,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUN-kT-ftf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2301.5999999999999" y="35.532233883058474"/>
+            <point key="canvasLocation" x="2640.8000000000002" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SEClogo" width="35" height="17"/>
+        <image name="calendar" width="25" height="25"/>
+        <image name="ramshorn" width="41" height="40"/>
+    </resources>
 </document>

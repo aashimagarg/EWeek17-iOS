@@ -10,6 +10,7 @@ import UIKit
 
 class RegistrationViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var uteidTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var orgTextField: UITextField!
@@ -47,11 +48,14 @@ class RegistrationViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loginButton.layer.cornerRadius = 4
         let orgPickerView = UIPickerView()
         orgPickerView.delegate = self
         orgTextField.inputView = orgPickerView
-        
+        loginButton.layer.shadowColor = UIColor.black.cgColor
+        loginButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        loginButton.layer.shadowRadius = 5
+        loginButton.layer.shadowOpacity = 0.8
         Configuration.sharedConfig.getConfigsFromFirebase { [weak self] (data: [String]) in
             self?.useData(data: data)
         }
