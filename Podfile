@@ -10,6 +10,7 @@ target 'EWeek2018' do
   pod 'Firebase/Database'
   pod 'SwiftHEXColors'
   pod 'QRCode'
+  pod 'XLPagerTabStrip', '~> 8.0'
 
   target 'EWeek2018Tests' do
     inherit! :search_paths

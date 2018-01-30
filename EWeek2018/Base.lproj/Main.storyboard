@@ -18,20 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FMV-lD-5sn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B30-hp-TeN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KkE-hj-RQZ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="All Events"/>
+                                    <segment title="My Agenda"/>
+                                </segments>
+                                <color key="tintColor" red="0.21083478629589081" green="0.13220776617527008" blue="0.6393057107925415" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="hGV-Vx-PEd" eventType="valueChanged" id="M1U-h5-ZAh"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FMV-lD-5sn">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B30-hp-TeN" firstAttribute="top" secondItem="pcO-Cp-CEq" secondAttribute="top" id="1Ij-MH-BC0"/>
+                            <constraint firstItem="FMV-lD-5sn" firstAttribute="leading" secondItem="pcO-Cp-CEq" secondAttribute="leading" id="RFf-zn-JBv"/>
+                            <constraint firstItem="FMV-lD-5sn" firstAttribute="top" secondItem="B30-hp-TeN" secondAttribute="bottom" id="aRq-ze-88e"/>
+                            <constraint firstItem="B30-hp-TeN" firstAttribute="trailing" secondItem="pcO-Cp-CEq" secondAttribute="trailing" id="hw5-YA-yuy"/>
+                            <constraint firstItem="FMV-lD-5sn" firstAttribute="bottom" secondItem="pcO-Cp-CEq" secondAttribute="bottom" id="jbk-yk-gK6"/>
+                            <constraint firstItem="FMV-lD-5sn" firstAttribute="trailing" secondItem="pcO-Cp-CEq" secondAttribute="trailing" id="kAR-HY-bVH"/>
+                            <constraint firstItem="B30-hp-TeN" firstAttribute="leading" secondItem="pcO-Cp-CEq" secondAttribute="leading" id="kKe-ix-2Mz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pcO-Cp-CEq"/>
                     </view>
                     <connections>
+                        <outlet property="control" destination="B30-hp-TeN" id="qtH-1S-9DW"/>
+                        <outlet property="segmentedControl" destination="B30-hp-TeN" id="ibk-7E-LWj"/>
                         <outlet property="tableView" destination="FMV-lD-5sn" id="TOh-F4-96p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="StY-Xl-JWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hGV-Vx-PEd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="224.80000000000001" y="-12.143928035982009"/>
         </scene>
